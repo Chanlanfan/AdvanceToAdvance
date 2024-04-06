@@ -1,7 +1,9 @@
 # WELCOME TO `Advance to Advance` PLUGIN
 
 ![Static Badge](https://img.shields.io/badge/Version-0.1.1-blue)
-![Static Badge](https://img.shields.io/badge/Download-click%20here-green?link=https%3A%2F%2Fgithub.com%2FChanlanfan%2FAdvanceToAdvance%2Freleases)
+
+
+
 
 
 > [!WARNING]   
