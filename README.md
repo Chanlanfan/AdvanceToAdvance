@@ -7,5 +7,10 @@
 ## Usage:
 ### Commands:
 `/info`, `/?i` - Shows basic info of mod.
-`/pause <boolean>` - toggles pause state: 
- - `true`: timer is pauses and <span style="color:red">**PAUSED**</span> is displayed in action bar of every player.
+
+`settime` - Sets time for current player. **WILL ADD ARGUEMENT SOON
+
+`/pause <boolean>` - toggles pause state: (Paused on server start by default)
+ - `/pause true`: timer is pauses and `PAUSED` is displayed in action bar of every player.
+ - `/pause false`: timer resumes where it left off and time is displayed in the action bar: `mm:ss`
+ - `/pause`: timer will swap state;  `if false -> true`; *`if true -> false`*. **NOTE: `true -> false` does not work yet. Use `/pause` (on its own) as a *quick pause* if you will.
