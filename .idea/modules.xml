@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/AdvanceToAdvance.iml" filepath="$PROJECT_DIR$/.idea/modules/AdvanceToAdvance.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/AdvanceToAdvance.main.iml" filepath="$PROJECT_DIR$/.idea/modules/AdvanceToAdvance.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.chanlanfan.AdvanceToAdvance.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.chanlanfan.AdvanceToAdvance.main.iml" />
     </modules>
   </component>
 </project>

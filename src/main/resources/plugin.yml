@@ -1,5 +1,5 @@
 name: AdvanceToAdvance
-version: 0.1.4
+version: 1
 main: org.chanlanfan.advancetoadvance.AdvanceToAdvance
 api-version: '1.20'
 commands:
@@ -7,19 +7,19 @@ commands:
     description: Overview of Plugin
     usage: /<command>
     aliases: ?i
-  reloadata:
-    description: Reloads the plugin (Basically the entire server, BUT DON'T FEAR!! it doesn't kick everyone, it does it uninterrupted)
-    usage: /<command>
-    aliases: ?rl
-  test:
-    description: Current testing
-    usage: /<command>
-    aliases: ?t
   settime:
     description: Set timer
-    usage: /<command>
+    usage: /<command> 'seconds' 'name (optional)'
     aliases: ?st
   pause:
     description: pause timer
-    usage: /<command>
+    usage: /<command> 'true'/'pause' (optional, will invert if boolean not given)
     aliases: ?pt
+  pair:
+    description: pair with player
+    usage: /command <player>
+    aliases: ?pp
+  unpairall:
+    description: Unpair all players.
+  unpair:
+    description: Unpair yourself from your partner.

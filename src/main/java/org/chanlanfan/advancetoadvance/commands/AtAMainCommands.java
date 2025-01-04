@@ -7,6 +7,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 import org.chanlanfan.advancetoadvance.AdvanceToAdvance;
 import org.jetbrains.annotations.NotNull;
 import net.kyori.adventure.text.Component;
@@ -23,14 +24,13 @@ import static org.chanlanfan.advancetoadvance.AdvanceToAdvance.*;
 public class AtAMainCommands implements CommandExecutor {
 
 
+
+
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String s, @NotNull String[] strings) {
         Player player = (Player) sender;
 
-        if (cmd.getName().equalsIgnoreCase("test")) {
-//            player.sendMessage(String.valueOf(AdvanceToAdvance.seconds));
 
-        }
 
 
 
@@ -56,10 +56,6 @@ public class AtAMainCommands implements CommandExecutor {
 
         }
 
-        if (cmd.getName().equalsIgnoreCase("reloadata")) {
-            getServer().reload();
-            Bukkit.broadcastMessage("SERVER RELOADED");
-        }
         return true;
     }
 }
