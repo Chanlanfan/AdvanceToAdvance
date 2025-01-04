@@ -25,6 +25,7 @@ import org.chanlanfan.advancetoadvance.commands.AtATimerCommands;
 import org.chanlanfan.advancetoadvance.commands.AtAUnpairCommands;
 import org.chanlanfan.advancetoadvance.events.AtAEvents;
 
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Objects;
 import java.util.UUID;
@@ -69,6 +70,27 @@ public final class AdvanceToAdvance extends JavaPlugin implements Listener {
 
         Bukkit.getPluginManager().registerEvents(this, this);
 
+        // ****************** //
+        // **** Expiring **** //
+        // ****************** //
+
+        LocalDate expirationDate = LocalDate.of(2025, 1, 30);
+
+        // Get the current date
+        LocalDate currentDate = LocalDate.now();
+
+        // Check if the plugin has expired
+        if (currentDate.isAfter(expirationDate)) {
+            Bukkit.getLogger().severe("This plugin has expired and is no longer usable.");
+            Bukkit.broadcastMessage("AtA membership has expired, please contact an admin. If you are an admin, please contact Chanlanfan");
+            // Disable the plugin
+            Bukkit.getPluginManager().disablePlugin(this);
+            return;
+        }
+
+        // ******************* //
+        // ** Expiring Over ** //
+        // ******************* //
 
 
 //        LOAD COMMANDS
