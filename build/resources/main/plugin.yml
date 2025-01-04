@@ -1,0 +1,17 @@
+name: AdvanceToAdvance
+version: 1
+main: org.chanlanfan.advancetoadvance.AdvanceToAdvance
+api-version: '1.20'
+commands:
+  info:
+    description: Overview of Plugin
+    usage: /<command>
+    aliases: ?i
+  settime:
+    description: Set timer
+    usage: /<command> 'seconds' 'name (optional)'
+    aliases: ?st
+  pause:
+    description: pause timer
+    usage: /<command> 'true'/'pause' (optional, will invert if boolean not given)
+    aliases: ?pt
